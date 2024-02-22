@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+h2{
+    cursor: pointer;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    background-color: beige;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: 50px;
+    width: 50%;
+    height: 600px;
+    border-radius: 10px;
+    background-image: url('https://burst.shopifycdn.com/photos/fog-on-dark-waters-edge.jpg?width=1000&format=pjpg&exif=0&iptc=0');
+    background-position: center;
+}
+
+.main.flipped {
+    transform: rotateY(180deg);
+}
+
+.login, .register {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backface-visibility: hidden;
+}
+
+.register {
+    transform: rotateY(180deg);
+}
+
+input {
+    border: black 1px solid;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+}
+.a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn{
+    width: 50%;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.434);
+    border-radius: 5px;
+}
